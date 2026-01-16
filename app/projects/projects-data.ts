@@ -68,7 +68,7 @@ export const projects: Record<string, Project> = {
     "Engine Orchestrator: PaperTradingEngine that coordinates exits → entries → mark-to-market per candle for deterministic replay",
   ],
   techStack: ["Python", "Pandas", "NumPy", "FastAPI"],
-  highlights: [
+  features: [
     "Event-driven design with deterministic candle-by-candle stepping for reproducible results",
     "Multi-symbol portfolio replay tested on a large dataset (watchlist-scale simulation)",
     "Risk-managed position sizing (capital-based risk % per trade) with RRR enforcement",
@@ -100,7 +100,7 @@ export const projects: Record<string, Project> = {
     "Output Layer: Structured incident logs containing timestamps, vehicle details, bounding boxes, and evidence frames"
   ],
   techStack: ["Python", "OpenCV", "PyTorch", "YOLO", "Tesseract OCR", "NumPy"],
-  highlights: [
+  features: [
     "End-to-end automated pipeline from raw visual input to actionable littering reports",
     "Multi-object detection and vehicle association for realistic real-world scenarios",
     "License plate extraction for accountability and enforcement workflows",

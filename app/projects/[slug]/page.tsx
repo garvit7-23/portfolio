@@ -62,16 +62,18 @@ export default async function ProjectPage({ params }: Props) {
       </section>
 
       {/* Solution */}
-      {project.features?.length > 0 && (
-      <section className="mt-10">
-      <h2 className="text-xl font-semibold text-gray-900 mb-4">Features</h2>
-      <ul className="list-disc pl-6 space-y-2 text-gray-700">
-        {project.features.map((f: string) => (
-          <li key={f}>{f}</li>
-        ))}
-      </ul>
-     </section>
-     )}
+      {(project.features ?? []).length > 0 && (
+        <section className="mt-10">
+          <h2 className="text-xl font-semibold text-gray-900 mb-4">Features</h2>
+          <ul className="list-disc pl-6 space-y-2 text-gray-700">
+            {(project.features ?? []).map((f) => (
+              <li key={f}>{f}</li>
+            ))}
+          </ul>
+        </section>
+      )}
+
+
 
 
       {/* Architecture */}
