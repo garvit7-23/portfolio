@@ -1,0 +1,40 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  background-color: #ffffff;
+  color: #1d1d1f; /* Apple dark text */
+  font-family: -apple-system, BlinkMacSystemFont,
+    "SF Pro Text", "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+  line-height: 1.6;
+}
+
+/* Layout container */
+.section {
+  max-width: 1100px;
+  margin: 0 auto;
+  padding: 6rem 1.5rem;
+}
+
+/* Headings */
+.section-title {
+  font-size: 2.25rem;
+  font-weight: 600;
+  letter-spacing: -0.02em;
+  margin-bottom: 2.5rem;
+}
+
+/* Muted text */
+.muted {
+  color: #6e6e73;
+}
+
+/* Links */
+a {
+  color: inherit;
+}
