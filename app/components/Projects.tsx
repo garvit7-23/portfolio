@@ -17,6 +17,14 @@ const projects = [
 
   },
   {
+    tag: "MAILFORGE",
+    title: "Mailforge",
+    description:
+      "A Resend-like Email API with Queue-based Delivery.",
+    image: "/mailforge.jpg",
+    link: "/projects/Mailforge"
+  },
+  {
     tag: "FULL-STACK",
     title: "Litter Detection From Moving Vehicles",
     description:
@@ -24,6 +32,7 @@ const projects = [
     image: "/project-litter.jpg",
     link: "/projects/litter-detection-system"
   },
+  
 ];
 
 export default function Projects() {

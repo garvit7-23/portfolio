@@ -108,7 +108,52 @@ export const projects: Record<string, Project> = {
     "Extensible design allowing new detection models, tracking logic, or OCR engines to be integrated easily"
   ],
   github: "https://github.com/garvit7-23/-Computer-Vision-Project"
+},
+
+"Mailforge":{
+  title: "MailForge",
+  tagline: "A Resend-like Email API with Queue-based Delivery",
+  description: [
+    "MailForge is a developer-first email sending platform inspired by services like Resend, SendGrid, and Mailgun.",
+    "It provides project-based API keys, sender identity management, and a REST API for sending emails.",
+    "Emails are delivered asynchronously using a Redis-backed queue and background workers.",
+    "The system is architected to mirror real-world email platforms with clear separation between API, workers, and delivery layers."
+  ],
+  problem:
+    "Building reliable email delivery systems is non-trivial due to retries, failures, rate limits, and infrastructure constraints. Most tutorials ignore queue-based delivery and real production limitations.",
+  solution:
+    "MailForge solves this by introducing an asynchronous, queue-based email delivery system with background workers, retries, and clean service separation, closely resembling real-world email platforms.",
+  architecture: [
+    "Next.js dashboard for managing projects and API keys",
+    "FastAPI backend for authentication, project management, and email API",
+    "Redis-based job queue (ForgeQueue) for async processing",
+    "Background worker service for email delivery",
+    "PostgreSQL for persistent data storage"
+  ],
+  techStack: [
+    "FastAPI",
+    "Python",
+    "PostgreSQL",
+    "Redis",
+    "ForgeQueue (custom Redis queue)",
+    "Next.js (App Router)",
+    "NextAuth (Google OAuth)",
+    "SMTP (local development)",
+    "Vercel",
+    "Railway"
+  ],
+  github: "https://github.com/garvit7-23/Mailforge",
+  features: [
+    "Project-based API keys",
+    "Verified sender email management",
+    "Asynchronous email delivery with background workers",
+    "Retry and dead-letter handling",
+    "Clean separation between API and workers",
+    "Developer dashboard for managing projects",
+    "Provider-ready architecture (SES / Resend / Mailgun)"
+  ]
 }
+
 
 
 };
